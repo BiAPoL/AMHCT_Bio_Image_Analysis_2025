@@ -8,6 +8,8 @@ This work is licensed by the Bio-Image Analysis Technology Development group (Bi
 
 It is maintained using [Jupyter lab](https://jupyter.org/) and build using [Jupyter book](https://jupyterbook.org/en/stable/intro.html).
 
+Slides are available in Zenodo: https://zenodo.org/records/15050331
+
 # Acknowledgements
 
 We would like to acknowledge all contributors who spend time in the past years to make slides and notebooks we are reusing there, in particular Robert Haase (Scads.AI Leipzig) and Till Korten (Helmholtz AI). This project was supported by the Deutsche Forschungsgemeinschaft under Germany’s Excellence Strategy – EXC2068 - Cluster of Excellence “Physics of Life” of TU Dresden.
