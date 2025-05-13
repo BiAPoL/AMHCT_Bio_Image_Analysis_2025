@@ -14,6 +14,8 @@ dependencies:
   - napari-skimage-regionprops==0.10.1
   - napari-accelerated-pixel-and-object-classification==0.14.1
   - napari-clusters-plotter==0.8.1
+  - napari-layer-details-display==0.1.5
+  - the-segmentation-game==0.2.0
   - omero-py==5.16.1
   - ezomero==3.1.1
   - pip
