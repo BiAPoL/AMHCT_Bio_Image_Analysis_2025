@@ -9,7 +9,7 @@ We will use the napari plugin [napari-accelerated-pixel-and-object-classificatio
 Open a terminal window and activate your conda environment:
 
 ```
-mamba activate tim25
+mamba activate amhct
 ```
 
 Afterwards, start up Napari:

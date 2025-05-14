@@ -1,4 +1,4 @@
-# Interactive object classification in Napari
+# Interactive object classification in Napari (optional)
 
 In this exercise we will train a [Random Forest Classifiers](https://en.wikipedia.org/wiki/Random_forest) for classifying segmented objects. 
 We will use the napari plugin [napari-accelerated-pixel-and-object-classification](https://www.napari-hub.org/plugins/napari-accelerated-pixel-and-object-classification).
@@ -8,7 +8,7 @@ We will use the napari plugin [napari-accelerated-pixel-and-object-classificatio
 Open a terminal window and activate your conda environment:
 
 ```
-mamba activate tim25
+mamba activate amhct
 ```
 
 Afterwards, start up Napari:
