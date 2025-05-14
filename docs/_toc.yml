@@ -10,4 +10,6 @@ options:
 chapters:
 - file: 01_images_are_numpy_arrays
 - file: interactive_pixel_classification/readme
+- file: napari_apoc_omero_workflow/readme
 - file: interactive_object_classification/readme
+- file: interactive_unsupervised_object_classification/readme
