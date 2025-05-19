@@ -77,6 +77,8 @@ You can close the OMERO Browser panel by clicking on the "X" button on the top l
 
 <img src="apoc_omero_9.png" alt="OMERO Browser" width="300"/>
 
+### Handling the image dimensions
+
 OMERO always stores images as 5D arrays (X, Y, Z, C, T). Therefore, even if you load a single-channel 2D image, it will be loaded as a 5D array with the dimensions (1, 1, 1, Y, X). But since napari splits channels into different layers, you actually end up with dimensions (1, 1, Y, X) for the image.
 You can check the dimensions of the image by clicking on `Tools > Utilities > Layer Details` in the menu bar. This will open a panel with information about the selected layer.
 
@@ -106,5 +108,66 @@ Use the Object Segmentation from the napari-apoc plugin to segment the image. Ch
 
 <img src="apoc_omero_16.png" alt="Object Segmentation" width="500"/>
 
-![](apoc_omero_17.png)
+## Saving Model and Predictions to OMERO
 
+### Saving Layers
+
+To save napari layers locally, select the layer you want to save, then go to `File > Save Selected Layers...`.
+
+<img src="apoc_omero_17.png" alt="Save layers" width="300"/>
+
+### Uploading Images to OMERO
+
+The napari-omero plugin has a fuctionality to upload segmetation results as OMERO ROIs. We will not use this functionality in this course, mainly because the download of ROIs is not available yet, but you can check the plugin documentation for more details.
+
+Instead we will upload the segmentation results as new images. In OMERO Insight, open the Importer by clicking on the Importer icon in the top left corner of the window.
+
+<img src="apoc_omero_18.png" alt="Upload to OMERO" width="300"/>
+
+In the Importer window, navigate to the folder where you saved the layers. Select the image files you want to upload and click on the `>` button to prepare them for upload.
+
+<img src="apoc_omero_19.png" alt="Upload to OMERO" width="500"/>
+
+This will pop-up a window where you can select the project and the dataset to upload the images to. Select the "Exercise_DataSet" dataset and click on "Add to the Queue".
+
+<img src="apoc_omero_20.png" alt="Upload to OMERO" width="400"/>
+
+This will add the images to the upload queue (right panel). You can add more images to the queue by repeating the previous step. 
+
+<img src="apoc_omero_21.png" alt="Upload to OMERO" width="500"/>
+
+Once you have added all the images you want to upload, click on the "Import" button in the bottom right corner of the Importer window.
+
+Go back to the OMERO Insight main window and click on the refresh button in the top left corner of the window. You should see the images you just uploaded in the "Exercise_DataSet" dataset.
+
+<img src="apoc_omero_22.png" alt="Upload to OMERO" width="500"/>
+
+### Annotating Images in OMERO
+
+After selecting an image, you can annotate it with key-value pairs to, for example, indicate the image ID containing the predictions. Below, in the original image, we defined the key "Predictions" and the value "38547", which is the image ID of the predictions we just uploaded.
+
+<img src="apoc_omero_23.png" alt="Annotate images in OMERO" width="300"/>
+
+We can also add tags to the image. Tags are useful to group images with similar characteristics so that they can be easily filtered later. For example, we can add the tag "Predictions" to the segmentation image to indicate that it contains predictions. Once we click on the `+` button, we can choose the tag we want to add to the image and click on the `>` button to add it.
+
+<img src="apoc_omero_24.png" alt="Annotate images in OMERO" width="200"/> | <img src="apoc_omero_25.png" alt="Annotate images in OMERO" width="200"/>
+
+We can filter the images by tags by clicking on "filter images" dropdown box at the top of the OMERO Insight window. This will open a panel where you can select the properties you want to filter by. Select the "Tags" property and write the tag you want to filter by (e.g. "Predictions"). Only images with this tag will be displayed in the OMERO Insight window.
+
+<img src="apoc_omero_26.png" alt="Annotate images in OMERO" width="400"/>
+
+### Saving the Model to OMERO
+
+If we want to save the model we trained in napari-apoc to OMERO, we can do this by uploading the `ObjectSegmenter.cl` file as an attachement to the image. To do this, select the image you want to upload the model to and click on the "Attachments" tab in the right panel. Click on the `+` button to add a new attachment. This will open a file browser where you can select the `ObjectSegmenter.cl` file. Select the file and click on "Open". The file will be uploaded as an attachment to the image.
+
+<img src="apoc_omero_26b.png" alt="Upload to OMERO" width="300"/>
+
+## Conclusion
+
+This page showed you how to create a segmentation workflow with napari-apoc from images loaded from OMERO and how to store the model and predictions back to OMERO.
+
+## Exercise
+
+Take notes of which information is necessary to make your workflow reproducible adn where you can find it. Share a brief summary of your workflow with a colleague, who will try to reproduce it.
+
+In the next section, we show you one possible way to reproduce the workflow we just created.
