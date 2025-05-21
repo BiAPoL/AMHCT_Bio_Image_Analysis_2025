@@ -13,7 +13,11 @@ We have shown in the [previous section](https://biapol.github.io/AMHCT_Bio_Image
 
 For small images, you could download them directly via the Download button in OMERO Insight. For example, clicking on the download button on the top right corner:
 
-<img src="R_apoc_omero_27.png" alt="Download model" width="400"/>
+```{image} ./R_apoc_omero_27.png
+:alt: Download model
+:width: 400px
+:align: center
+```
 
 ### Loading images from OMERO with napari-omero
 
@@ -21,11 +25,15 @@ For small images, you could download them directly via the Download button in OM
 
 Thus, activate the environment again and start napari:
 
-<img src="apoc_omero_4.png" alt="napari" width="300"/>
+```{image} ./apoc_omero_4.png
+:alt: napari
+:width: 300px
+:align: center
+```
 
 Open the OMERO Browser panel (`Plugins > napari-omero > OMERO Browser`), log in with your ZIH credentials to the server address `omero-int.biotec.tu-dresden.de` again and load both the original image and the predictions to the napari canvas.
 
-<img src="R_apoc_omero_28.png" alt="OMERO Browser" width="500"/>
+![](R_apoc_omero_28.png)
 
 ### Handling the Image Dimensions
 
@@ -33,31 +41,51 @@ Rename the image layers by double-clicking on the layer names in the napari laye
 
 Remove the unitary dimensions from the original image layers (`Tools > Transforms > Remove axes of length 1`), and duplicate the resulting layer by right-clicking on the layer name in the layer list and selecting "Duplicate Layer".
 
-<img src="R_apoc_omero_29.png" alt="OMERO Browser" width="400"/>
+```{image} ./R_apoc_omero_29.png	
+:alt: Remove axes of lenght 1
+:width: 400px
+:align: center
+```
 
 Rename the duplicated layer (e.g "Result od squeeze" -> "Image Squeezed"). Do the same for the predictions layer. You should end up with something like this:
 
-<img src="R_apoc_omero_31.png" alt="OMERO Browser" width="300"/>
+```{image} ./R_apoc_omero_31.png
+:alt: Rename layers
+:width: 300px
+:align: center
+```
 
 Finally, remove the original image layers (the ones with unitary dimensions) by selecting them and clicking on the trash can icon on the top right corner of the layer list. Convert the predictions layer to a `Labels` layer by right-clicking on the layer name in the layer list and selecting "Convert to Labels".
 
-<img src="R_apoc_omero_32.png" alt="OMERO Browser" width="400"/>
+```{image} ./R_apoc_omero_32.png
+:alt: Convert to Labels
+:width: 400px
+:align: center
+```
 
 ## Loading the ML model
 
 We have previously stored the ML model in OMERO as an attachment to the image. To download the model, in OMERO, select the image and, in the "Attachments" tab, click on the model file and choose "Download" from the menu. This will download the model file to your local machine.
 
-<img src="R_apoc_omero_26.png" alt="Download model" width="300"/>
+```{image} ./R_apoc_omero_26.png
+:alt: Download model
+:width: 300px
+:align: center
+```
 
 ## Running Pre-trained Object Segmentation Model with napari-apoc
 
 Now, we can run the pre-trained object segmentation model on the image. To do this, go to `Tools > Segmentation/labeling > Object Segmentation (apply pretrained, APOC)` in the menu bar.
 
-<img src="R_apoc_omero_33.png" alt="OMERO Browser" width="400"/>
+```{image} ./R_apoc_omero_33.png
+:alt: APOC
+:width: 400px
+:align: center
+```
 
 Select the image layer (e.g. "Image Squeezed") and the model file you downloaded from OMERO. Click on "Run" to run the predictions. You should see the predictions as a new `Lables` layer in napari.
 
-<img src="R_apoc_omero_34.png" alt="OMERO Browser" width="500"/>
+![](R_apoc_omero_34.png)
 
 ## Comparing the predictions with the previous segmentation results
 
@@ -65,11 +93,19 @@ To compare the new predictions with the previous segmentation, you can use [The 
 
 Go to `Plugins > The Segmentation Game Widget` in the menu bar.
 
-<img src="R_apoc_omero_35.png" alt="OMERO Browser" width="400"/>
+```{image} ./R_apoc_omero_35.png
+:alt: Segmentation game
+:width: 400px
+:align: center
+```
 
 This will open the Segmentation Game widget. Select the ground truth layer (e.g. "Predictions Squeezed") and the predictions layer (e.g. "Result of apply_object_segmentation"). Click on "Run" to calculate the chosen metric. In the example below, we used the "Jaccard Index sparse", which is a measure of similarity between two sets, and it is defined as the size of the intersection divided by the size of the union of the two sets.
 
-<img src="R_apoc_omero_36.png" alt="OMERO Browser" width="400"/>
+```{image} ./R_apoc_omero_36.png
+:alt: Segmentation game
+:width: 400px
+:align: center
+```
 
 A value 1 means perfect agreement, while a value 0 means no agreement.
 
