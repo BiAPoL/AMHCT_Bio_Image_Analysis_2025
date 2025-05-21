@@ -30,12 +30,11 @@ sphinx:
     html_show_copyright: false
     html_theme_options:
       navigation_with_keys: true
+    add_module_names: True
+#    autosummary_generate: True
+    bibtex_reference_style: author_year
   extra_extensions:
   - 'sphinx.ext.autodoc'
   - 'sphinx.ext.napoleon'
   - 'sphinx.ext.viewcode'
-  - 'sphinx.ext.autosummary'
-  config:
-    add_module_names: True
-#    autosummary_generate: True
-    bibtex_reference_style: author_year
+  - 'sphinx.ext.autosummary'   
