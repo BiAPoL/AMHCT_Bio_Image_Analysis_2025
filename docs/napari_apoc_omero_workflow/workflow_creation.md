@@ -8,7 +8,7 @@ Connect to the CMCB VPN if you are not already connected. You can find the instr
 
 Open the OMERO Insight application, click on the wrench icon and add the following server address `omero-int.biotec.tu-dresden.de`. This is the address of the OMERO server you will be using during the course.
 
-<img src="apoc_omero_1.png" alt="OMERO Insight" width="300"/>
+<img src="./apoc_omero_1.png" alt="OMERO Insight" width="300"/>
 
 Use your ZIH credentials to log in.
 
