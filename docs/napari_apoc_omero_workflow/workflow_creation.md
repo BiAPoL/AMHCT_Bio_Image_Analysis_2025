@@ -77,7 +77,7 @@ You can close the OMERO Browser panel by clicking on the "X" button on the top l
 
 <img src="apoc_omero_9.png" alt="OMERO Browser" width="300"/>
 
-### Handling the image dimensions
+### Handling the Image Dimensions
 
 OMERO always stores images as 5D arrays (X, Y, Z, C, T). Therefore, even if you load a single-channel 2D image, it will be loaded as a 5D array with the dimensions (1, 1, 1, Y, X). But since napari splits channels into different layers, you actually end up with dimensions (1, 1, Y, X) for the image.
 You can check the dimensions of the image by clicking on `Tools > Utilities > Layer Details` in the menu bar. This will open a panel with information about the selected layer.
@@ -104,7 +104,9 @@ Please delete the original image layer to avoid creating layer with these unit d
 
 ## Object Segmentation with napari-apoc
 
-Use the Object Segmentation from the napari-apoc plugin to segment the image. Check details on how to do this again in the [Interactive pixel classification and object segmentation in Napari](https://biapol.github.io/AMHCT_Bio_Image_Analysis_2025/interactive_pixel_classification/readme.html) section. 
+Use the Object Segmentation from the napari-apoc plugin to segment the image. You should open the Object Segmentation widget via `Tools > Segmentation/labeling > Object Segmentation (APOC)`.
+
+ Check more details on how to do this again in the [Interactive pixel classification and object segmentation in Napari](https://biapol.github.io/AMHCT_Bio_Image_Analysis_2025/interactive_pixel_classification/readme.html) section. 
 
 <img src="apoc_omero_16.png" alt="Object Segmentation" width="500"/>
 
