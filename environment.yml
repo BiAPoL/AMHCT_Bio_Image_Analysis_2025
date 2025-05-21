@@ -21,4 +21,5 @@ dependencies:
   - pip
   - pip:
     - napari-omero==0.5.0
+    - pyclesperanto-prototype==0.24.4
     - numpy==1.23.5
