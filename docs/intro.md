@@ -65,3 +65,5 @@ napari
 ```
 
 in the terminal. The first time you start napari may take longer than usual.
+
+If you have issues with pyclesperanto, check out this [troubleshooting section](https://github.com/clEsperanto/pyclesperanto_prototype?tab=readme-ov-file#troubleshooting-graphics-cards-drivers).
