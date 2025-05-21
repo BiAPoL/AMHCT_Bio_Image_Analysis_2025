@@ -17,7 +17,7 @@ Afterwards, start up Napari:
 napari
 ```
 
-Load the "Blobs" example dataset from the menu `File > Open Sample > clEsperanto > Blobs (from ImageJ)`
+Load the "Blobs" example dataset from data folder of this repository. You can find it [here](https://github.com/BiAPoL/AMHCT_Bio_Image_Analysis_2025/blob/main/data/blobs.tif). Drag and drop the file into the napari window.
 
 We furthermore need a label image. You can create it using the [pixel classifier trained earlier](machine_learning:pixel_classification) 
 or using the menu `Tools > Segmentation / labeling > Gauss-Otsu Labeling (clesperanto)`.
