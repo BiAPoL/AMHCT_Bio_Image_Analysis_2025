@@ -1,6 +1,7 @@
-name: tim25
+name: amhct
 channels:
   - conda-forge
+  - bioconda
 
 dependencies:
   - python==3.10
@@ -8,12 +9,16 @@ dependencies:
   - watermark
   - napari==0.5.6
   - pyqt==5.15.9
-  - seaborn==0.13.2
+  - numpy<2.0
   - napari-segment-blobs-and-things-with-membranes==0.3.11
   - napari-skimage-regionprops==0.10.1
   - napari-accelerated-pixel-and-object-classification==0.14.1
   - napari-clusters-plotter==0.8.1
-  - omero-py==5.19.6
+  - napari-layer-details-display==0.1.5
+  - the-segmentation-game==0.2.0
+  - omero-py==5.16.1
+  - ezomero==3.1.1
   - pip
   - pip:
-    - napari-omero==0.4.0
+    - napari-omero==0.5.0
+    - numpy==1.23.5

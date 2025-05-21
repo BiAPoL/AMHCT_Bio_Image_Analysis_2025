@@ -1,6 +1,6 @@
 # In _config.yml
-title: Trends in Microscopy 2025
-author: Marcelo Zoccoler, Johannes Soltwedel
+title: AMHCT Bio-Image Analysis
+author: Marcelo Leomil Zoccoler
 logo: biapol_logo.png
 execute:
   execute_notebooks: off
@@ -11,7 +11,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/BiAPoL/TrendsInMicroscopy2025 # Online location of the book
+  url: https://github.com/BiAPoL/AMHCT_Bio_Image_Analysis_2025 # Online location of the book
   path_to_book: docs
   branch: main # branch used when creating links (optional)
 
@@ -30,12 +30,11 @@ sphinx:
     html_show_copyright: false
     html_theme_options:
       navigation_with_keys: true
+    add_module_names: True
+#    autosummary_generate: True
+    bibtex_reference_style: author_year
   extra_extensions:
   - 'sphinx.ext.autodoc'
   - 'sphinx.ext.napoleon'
   - 'sphinx.ext.viewcode'
-  - 'sphinx.ext.autosummary'
-  config:
-    add_module_names: True
-#    autosummary_generate: True
-    bibtex_reference_style: author_year
+  - 'sphinx.ext.autosummary'   

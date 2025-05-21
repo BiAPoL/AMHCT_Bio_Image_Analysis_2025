@@ -1,4 +1,4 @@
-# Interactive unsupervised object classification in Napari
+# Interactive unsupervised object classification in Napari (optional)
 
 In this exercise we will perfom [Feature Extraction](https://focalplane.biologists.com/2023/05/03/feature-extraction-in-napari/), Dimensionality Reduction with [UMAP](https://umap-learn.readthedocs.io/en/latest/#) and Clustering with [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/index.html) to assign objects (nuclei) to different classes in napari.
 We will use the napari plugin [napari-clusters-plotter plugin](https://github.com/BiAPoL/napari-clusters-plotter?tab=readme-ov-file#napari-clusters-plotter).
@@ -8,7 +8,7 @@ We will use the napari plugin [napari-clusters-plotter plugin](https://github.co
 Open a terminal window and activate your conda environment:
 
 ```
-mamba activate tim25
+mamba activate amhct
 ```
 
 Afterwards, start up Napari:

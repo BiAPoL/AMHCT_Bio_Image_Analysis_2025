@@ -10,7 +10,8 @@ options:
 chapters:
 - file: 01_images_are_numpy_arrays
 - file: interactive_pixel_classification/readme
-- file: multichannel_analysis/readme
+- file: napari_skimage_regionprops/readme
 - file: interactive_object_classification/readme
 - file: interactive_unsupervised_object_classification/readme
-- file: seaborn/seaborn_demo
+- file: napari_apoc_omero_workflow/workflow_creation
+- file: napari_apoc_omero_workflow/workflow_reproduction
