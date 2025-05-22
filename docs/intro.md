@@ -22,7 +22,7 @@ This course will introduce the participants to the basics of bio-image analysis 
 
 3. Open the OMERO Insight application, click on the wrench icon and add the following server address `omero-int.biotec.tu-dresden.de`. This is the address of the OMERO server you will be using during the course.
 
-```{image} ./apoc_omero_1.png
+```{image} ./napari_apoc_omero_workflow/apoc_omero_1.png
 :alt: OMERO Insight
 :width: 300px
 :align: center
