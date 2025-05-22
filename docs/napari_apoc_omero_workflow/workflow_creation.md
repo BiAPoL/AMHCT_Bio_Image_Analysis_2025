@@ -2,20 +2,7 @@
 
 ## Logging into OMERO
 
-Download the [OMERO Insight application](https://www.openmicroscopy.org/omero/downloads/) and install it on your computer. This application allows you to connect to the OMERO server and upload images (the web interface cannot be used to upload images).
-
-Connect to the CMCB VPN if you are not already connected. You can find the instructions for this [here](https://intranet.crt-dresden.de/grav/it_department/faq_howto/remote-connectivity-vpn-sftp-ssh) (internal link, needs ZIH login to be accessed).
-
-Open the OMERO Insight application, click on the wrench icon and add the following server address `omero-int.biotec.tu-dresden.de`. This is the address of the OMERO server you will be using during the course.
-
-```{image} ./apoc_omero_1.png
-:alt: OMERO Insight
-:width: 300px
-:align: center
-```
-
-Use your ZIH credentials to log in.
-
+Log in to the OMERO server using the OMERO Insight application. If you haven't installed it yet, please refer to the first page of this book.
 Once you are logged in, you should see the following interface:
 
 ![](apoc_omero_2.png)

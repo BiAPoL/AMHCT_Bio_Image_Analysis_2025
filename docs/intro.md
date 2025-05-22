@@ -14,6 +14,22 @@ This course will introduce the participants to the basics of bio-image analysis 
 - Object Classification with Machine Learning using [napari-apoc](https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification) and [napari-clusters-plotter](https://github.com/BiAPoL/napari-clusters-plotter)
 - Reproducible image analysis with [napari](https://napari.org/stable/) and [omero](https://omero.org/) using [napari-apoc](https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification) and [napari-omero](https://github.com/tlambert03/napari-omero)
 
+## Logging in to OMERO
+
+1. Download the [OMERO Insight application](https://www.openmicroscopy.org/omero/downloads/) and install it on your computer. This application allows you to connect to the OMERO server and upload images (the web interface cannot be used to upload images).
+
+2. Connect to the CMCB VPN if you are not already connected. You can find the instructions for this [here](https://intranet.crt-dresden.de/grav/it_department/faq_howto/remote-connectivity-vpn-sftp-ssh) (internal link, needs ZIH login to be accessed).
+
+3. Open the OMERO Insight application, click on the wrench icon and add the following server address `omero-int.biotec.tu-dresden.de`. This is the address of the OMERO server you will be using during the course.
+
+```{image} ./apoc_omero_1.png
+:alt: OMERO Insight
+:width: 300px
+:align: center
+```
+
+Use your ZIH credentials to log in.
+
 ## Setting up the environment
 
 To follow the course, you will need to have Python installed in your computer. 
