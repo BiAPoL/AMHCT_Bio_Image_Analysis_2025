@@ -18,7 +18,11 @@ Afterwards, start up Napari:
 napari
 ```
 
-Load the "Blobs" example dataset from data folder of this repository. You can find it [here](https://github.com/BiAPoL/AMHCT_Bio_Image_Analysis_2025/blob/main/data/blobs.tif). Drag and drop the file into the napari window.
+Load the "Blobs" example dataset from data folder of this repository. You can find it [here](https://github.com/BiAPoL/AMHCT_Bio_Image_Analysis_2025/blob/main/data/blobs.tif). 
+
+![](blobs.png)
+
+Drag and drop the file into the napari window.
 
 ## Pixel classification and Object Segmentation in Napari
 
