@@ -53,6 +53,7 @@ cd AMHCT_Bio_Image_Analysis_2025
 ```
 
 If you chose to download the `.zip` file in the previous step, you will need to navigate to the folder where you decompressed the file.
+The folder name could be different, for example, `AMHCT_Bio_Image_Analysis_2025-main` or similar.
 
 4. Install the required Python packages with:
 
@@ -70,7 +71,7 @@ mamba activate amhct
 
 This will activate the environment, which means giving access to the path where the installed packages are.
 
-You should see the name `(amhct)` now in front of the active typing line.
+You should see the name `(amhct)` now in front of the active typing line. If this does not work, you may need to restart your terminal or run the command `conda init` and then restart your terminal.
 
 ## Starting napari
 
