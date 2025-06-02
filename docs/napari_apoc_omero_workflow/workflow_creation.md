@@ -7,7 +7,7 @@ Once you are logged in, you should see the following interface:
 
 ![](apoc_omero_2.png)
 
-Click on "Display Groups" and check the "RegBioMed" group to get access to the images you will be using during the course. On the left pane, you should be able to expand the "RegBioMed" group and see the Project "Segmentation with ML" and 2 Datasets.
+Click on "Display Groups" and check the "RegBioMed" group and "All Members" to get access to the images you will be using during the course. On the left pane, you should be able to expand the "RegBioMed" group and see the Project "Segmentation with ML" and 2 Datasets.
 
 ![](apoc_omero_3.png)
 
@@ -51,7 +51,7 @@ This will open the OMERO Browser panel on the right side of the napari window. E
 :align: center
 ```
 
-Once you are connected, change the "Group" to "RegBioMed" and set the "User" to "Marcelo Leomil Zoccoler". This will give you access to the images you will be using during the course. You should see the Project "Segmentation with ML".
+Once you are connected, change the "Group" to "RegBioMed" and set the "User" to "Marcelo Leomil Zoccoler" or "All". This will give you access to the images you will be using during the course. You should see the Project "Segmentation with ML".
 
 ```{image} ./apoc_omero_7.png	
 :alt: OMERO Browser
