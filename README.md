@@ -8,7 +8,7 @@ This work is licensed by the Bio-Image Analysis Technology Development group (Bi
 
 It is maintained using [Jupyter lab](https://jupyter.org/) and build using [Jupyter book](https://jupyterbook.org/en/stable/intro.html).
 
-Slides will be available soon.
+Slides are available [here](./docs/AMHCT_Zoccoler_Bio_Image_Analysis.pdf).
 
 # Acknowledgements
 

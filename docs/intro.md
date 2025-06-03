@@ -14,6 +14,8 @@ This course will introduce the participants to the basics of bio-image analysis 
 - Object Classification with Machine Learning using [napari-apoc](https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification) and [napari-clusters-plotter](https://github.com/BiAPoL/napari-clusters-plotter)
 - Reproducible image analysis with [napari](https://napari.org/stable/) and [omero](https://omero.org/) using [napari-apoc](https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification) and [napari-omero](https://github.com/tlambert03/napari-omero)
 
+Slides are available [here](./AMHCT_Zoccoler_Bio_Image_Analysis.pdf).
+
 ## Logging in to OMERO
 
 1. Download the [OMERO Insight application](https://www.openmicroscopy.org/omero/downloads/) and install it on your computer. This application allows you to connect to the OMERO server and upload images (the web interface cannot be used to upload images).
